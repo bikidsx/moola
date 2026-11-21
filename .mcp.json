@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "nano-banana": {
+      "command": "node",
+      "args": ["tools/nano-banana-mcp.mjs"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY:-}",
+        "NODE_USE_ENV_PROXY": "1"
+      }
+    }
+  }
+}

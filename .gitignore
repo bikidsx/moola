@@ -1,0 +1,4 @@
+# Nano Banana MCP: the server writes the API key here if configured through its tool
+.nano-banana-config.json
+# Nano Banana MCP: generated images
+generated_imgs/
