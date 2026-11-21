@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "firecrawl-website-design-clone": {
+      "source": "firecrawl/firecrawl-workflows",
+      "commit": "d2a986240f9d786ae54fc33fcfd9ad37308e9cc3",
+      "sourceType": "github",
+      "skillPath": "skills/firecrawl-website-design-clone/SKILL.md",
+      "computedHash": "d1d7198b5ac5799095814fa3893795a63ce356049ff20d4c9d510959b6c40feb"
+    }
+  }
+}
