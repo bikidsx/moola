@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>moola · Form a company, faster. $99 a year.</title>
+  <meta name="description" content="moola sets up your company and handles the paperwork. Faster, for $99 a year.">
+  <meta name="theme-color" content="#2a6ba5">
+  <meta property="og:title" content="moola · Form a company, faster.">
+  <meta property="og:description" content="moola sets up your company and handles the paperwork. $99 a year.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317203a'/%3E%3Cpath d='M32 10 50 52 32 44 14 52Z' fill='%23fff6e3'/%3E%3Cpath d='M32 10v34' stroke='%2317203a' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/la-belle-aurore.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/dawn-sky.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="wordmark" href="#top" aria-label="moola, back to top">moola</a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#price">Price</a>
+    </nav>
+    <a class="btn btn--small" href="#start" data-signup>Start for $99</a>
+  </header>
+
+  <main id="main" data-main>
+    <!-- The flight: a dotted trail and a paper plane that follow the scroll. Built in main.js. -->
+    <svg class="trail" data-trail aria-hidden="true" focusable="false"></svg>
+    <img class="plane" data-plane src="assets/img/paper-plane.webp" alt="" width="492" height="640" decoding="async">
+
+    <!-- 1. Dawn -->
+    <section class="hero" id="top" data-zone="sky">
+      <div class="layers" aria-hidden="true">
+        <img class="sky" data-parallax="0.22" src="assets/img/dawn-sky.webp" alt="" width="2400" height="1340">
+        <div class="drift drift--far" data-parallax="0.12">
+          <img src="assets/img/cloud-layer-a.webp" alt="" width="2400" height="1018">
+          <img src="assets/img/cloud-layer-a.webp" alt="" width="2400" height="1018">
+        </div>
+      </div>
+
+      <div class="hero__copy" data-parallax="0.1">
+        <h1 class="hero__title" aria-label="The faster way to form a company">
+          <span class="script hero__script" data-write aria-hidden="true">the faster way to</span>
+          <span class="display hero__display" data-words aria-hidden="true">Form a company</span>
+        </h1>
+        <p class="lede hero__lede" data-reveal style="--d: 620ms">
+          moola sets up your company and handles the paperwork.
+          <span class="nowrap">$99 a year.</span>
+        </p>
+        <div class="actions" data-reveal style="--d: 760ms">
+          <a class="btn" href="#start" data-signup>Start for $99</a>
+          <a class="link" href="#how">See how it works</a>
+        </div>
+      </div>
+
+      <div class="bank" aria-hidden="true" data-parallax="-0.1">
+        <img src="assets/img/cloud-layer-b.webp" alt="" width="2400" height="1018">
+      </div>
+    </section>
+
+    <!-- 2. The plain statement -->
+    <section class="statement" id="about" data-zone="paper">
+      <div class="wrap">
+        <h2 class="display statement__line" data-words>Starting a company is mostly paperwork.</h2>
+        <p class="script statement__note" data-write>
+          so we do the paperwork.
+          <svg class="scribble" viewBox="0 0 420 26" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M4 15c58-9 121-11 186-8 44 2 76 6 112 4 38-2 74-6 114-3" pathLength="1"/>
+          </svg>
+        </p>
+        <p class="body statement__body" data-reveal>
+          moola is a company formation service. We set up your company, fill in
+          the forms and file them. It's faster, and it costs $99 a year.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. How it works: the form fills itself in -->
+    <section class="how" id="how" data-zone="paper">
+      <div class="wrap how__grid">
+        <h2 class="display how__heading" data-words>How it works</h2>
+        <div class="how__sticky">
+          <div class="form" data-form data-step="0" aria-hidden="true">
+            <div class="form__head">
+              <span class="form__brand">moola</span>
+              <span class="form__title">Company formation</span>
+            </div>
+            <div class="form__row form__row--1">
+              <span class="form__label">Company name</span>
+              <span class="form__ink" data-form-name>Your company</span>
+            </div>
+            <div class="form__row form__row--2">
+              <span class="form__label">Paperwork</span>
+              <span class="form__ink">
+                prepared and filed
+                <svg class="tick" viewBox="0 0 36 30" aria-hidden="true" focusable="false">
+                  <path d="M3 17c4 3 7 6 9 10C17 16 24 8 33 3" pathLength="1"/>
+                </svg>
+              </span>
+            </div>
+            <div class="form__row form__row--3">
+              <span class="form__label">Status</span>
+              <span class="form__ink form__ink--empty"></span>
+            </div>
+            <svg class="stamp" viewBox="0 0 220 220" aria-hidden="true" focusable="false">
+              <defs>
+                <path id="stamp-arc" d="M110 110m-78 0a78 78 0 1 1 156 0a78 78 0 1 1 -156 0"/>
+                <filter id="stamp-ink" x="-10%" y="-10%" width="120%" height="120%">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+                  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.25" result="holes"/>
+                  <feComposite in="SourceGraphic" in2="holes" operator="in"/>
+                </filter>
+              </defs>
+              <g filter="url(#stamp-ink)">
+                <circle cx="110" cy="110" r="100" fill="none" stroke="currentColor" stroke-width="5"/>
+                <circle cx="110" cy="110" r="60" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <text class="stamp__ring" fill="currentColor">
+                  <textPath href="#stamp-arc" startOffset="0" textLength="486" lengthAdjust="spacing">MOOLA · COMPANY FORMATION · MOOLA · COMPANY FORMATION ·</textPath>
+                </text>
+                <text class="stamp__word" x="110" y="124" text-anchor="middle" fill="currentColor">FORMED</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="how__steps">
+          <ol class="steps">
+            <li class="step" data-step-item="1">
+              <span class="step__num">01</span>
+              <h3 class="display step__title">You tell us about your company.</h3>
+              <p class="body">Start with its name. Try it here and watch the form.</p>
+              <label class="field">
+                <span class="field__label">Company name</span>
+                <input class="field__input" type="text" name="company" maxlength="26" autocomplete="organization" placeholder="Your company" data-name-input>
+              </label>
+            </li>
+            <li class="step" data-step-item="2">
+              <span class="step__num">02</span>
+              <h3 class="display step__title">We do the paperwork.</h3>
+              <p class="body">We prepare the formation documents and file them for you.</p>
+            </li>
+            <li class="step" data-step-item="3">
+              <span class="step__num">03</span>
+              <h3 class="display step__title">Your company is formed.</h3>
+              <p class="body">Then you get back to the work you started it for.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Dusk: the price -->
+    <section class="price" id="price" data-zone="dark">
+      <div class="layers price__layers" aria-hidden="true">
+        <img class="sky" data-parallax="0.16" src="assets/img/dusk-sky.webp" alt="" width="2600" height="1103" loading="lazy">
+      </div>
+      <div class="price__stage">
+        <p class="price__num" aria-hidden="true"><span data-parallax="-0.45" data-parallax-host="parent" data-parallax-clamp>$99</span></p>
+        <div class="price__bank" aria-hidden="true">
+          <img src="assets/img/cloud-layer-dusk.webp" alt="" width="2400" height="1018" loading="lazy">
+        </div>
+        <div class="price__copy">
+          <h2 class="price__title" aria-label="$99 a year. That's it.">
+            <span class="script" data-write aria-hidden="true">a year. that's it.</span>
+          </h2>
+          <p class="lede" data-reveal>One flat price to form your company.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Night: start -->
+    <section class="night" id="start" data-zone="dark">
+      <div class="layers" aria-hidden="true">
+        <img class="sky" data-parallax="0.14" src="assets/img/night-sky.webp" alt="" width="2600" height="1103" loading="lazy">
+      </div>
+      <div class="night__copy">
+        <h2 class="display night__title" data-words>Ready when you are.</h2>
+        <p class="lede" data-reveal>Form your company with moola. Faster, for $99 a year.</p>
+        <div class="actions" data-reveal style="--d: 120ms">
+          <a class="btn btn--light" href="#start" data-signup>Start for $99</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <a class="wordmark" href="#top" aria-label="moola, back to top">moola</a>
+        <p>Company formation, faster. $99 a year.</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="#how">How it works</a>
+          <a href="#price">Price</a>
+        </nav>
+        <p class="footer__legal">© 2026 moola</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
